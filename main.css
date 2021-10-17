@@ -622,9 +622,9 @@ path.top, path.bottom {
 }
 
 .show-cookies-box{
-  animation: showCookiesBox 0.35s 1.55s forwards ease-in-out;
-  -moz-animation: showCookiesBox 0.35s 1.55s forwards ease-in-out;
-  -webkit-animation: showCookiesBox 0.35s 1.55s forwards ease-in-out;
+  animation: showCookiesBox 0.3s 1.55s forwards ease-out;
+  -moz-animation: showCookiesBox 0.3s 1.55s forwards ease-out;
+  -webkit-animation: showCookiesBox 0.3s 1.55s forwards ease-out;
 }
 @keyframes showCookiesBox {
   0%   {bottom: -515px;}
@@ -639,9 +639,9 @@ path.top, path.bottom {
   100% {bottom: 25px;}
 }
 .show-cookies-box-border{
-  animation: showCookiesBoxBorder 0.35s 1.55s forwards ease-in-out;
-  -moz-animation: showCookiesBoxBorder 0.35s 1.55s forwards ease-in-out;
-  -webkit-animation: showCookiesBoxBorder 0.35s 1.55s forwards ease-in-out;
+  animation: showCookiesBoxBorder 0.3s 1.55s forwards ease-out;
+  -moz-animation: showCookiesBoxBorder 0.3s 1.55s forwards ease-out;
+  -webkit-animation: showCookiesBoxBorder 0.3s 1.55s forwards ease-out;
 }
 @keyframes showCookiesBoxBorder {
   0%   {bottom: -510px;}
