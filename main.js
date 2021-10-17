@@ -55,7 +55,51 @@ const eye2 = document.querySelector('.eye-right')
 window.addEventListener('mousemove', (evt) => {
     const x = -(window.innerWidth / 2 - evt.pageX) / 160;
     const y = -(window.innerHeight / 5 - evt.pageY) / 160;
-    console.log(y)
     eye1.style.transform = `translateY(${y}px) translateX(${x}px)`;
     eye2.style.transform = `translateY(${y}px) translateX(${x}px)`;
 });  
+
+
+
+
+
+
+// Djanog IT
+function addRemoveClass(operation, pointer, className){
+    switch(operation){
+        case "remove":
+            document.querySelector(pointer).classList.remove(className)
+            break
+        case "add":
+            document.querySelector(pointer).classList.add(className)
+            break
+        default:
+            console.log("wrong operation name")
+    }
+}
+function DjangoIT(){
+    addRemoveClass("add", ".django-it-button-text", "django-it-button-text-animation")
+    addRemoveClass("add", ".django-it-button", "django-it-button-animation")
+    addRemoveClass("add", ".python-logo-top", "python-logo-top-animation")
+    addRemoveClass("add", ".python-logo-bottom", "python-logo-bottom-animtion")
+    addRemoveClass("add", ".cookies-box", "show-cookies-box")
+    addRemoveClass("add", ".cookies-box-border", "show-cookies-box-border")
+}
+
+
+
+
+
+
+
+
+function hideCookiesBox() {
+    addRemoveClass("add", ".pacman", "pacman-animation")
+    setTimeout(function(){addRemoveClass("add", ".cookies-img", "cookies-animation")}, 1700)
+    setTimeout(function(){addRemoveClass("add", ".cookies-box", "hide-cookies-box")}, 2500)
+    setTimeout(function(){addRemoveClass("add", ".cookies-box-border", "hide-cookies-box-border")}, 2500)
+    setTimeout(function(){addRemoveClass("add", ".django-it-button", "django-it-button-close-animation")}, 2500)
+    setTimeout(function(){addRemoveClass("add", ".cookies-box-container", "block-display")}, 3000)
+    
+    
+}
